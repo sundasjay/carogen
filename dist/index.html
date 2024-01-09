@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CaroGen Corporation</title>
+    <link rel="icon" type="image/png" href="./images/home/vector.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!-- endbuild -->
+    <link rel="stylesheet" href="./scss/components/_header.scss" />
+
+    <!-- build:css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <!-- <link rel="stylesheet" href="./css/animate.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="css/lib/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- build:css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+</head>
+
+<body>
+    <a id="button"></a>
+    <header class="page-header">
+        <div class="container mx-auto">
+            <nav class="flex justify-between items-center navbar">
+                <div class="brandLogo">
+                    <a href="./index.html"> <img src="./images/footer-logo.png" class="brand-logo" /></a>
+
+                </div>
+                <!--  -->
+                <div class="nav-res">
+                    <div class="menuToggle">
+                        <input type="checkbox" id="myCheckbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="sliding-navbar" role="navigation">
+
+
+                        <ul class="menuItem navbar--items">
+                            <li class=" navbar--item">
+                                <a class="current" href="./index.html">Home</a>
+                            </li>
+                            <li class=" dropdown dropdown-2  navbar--item">
+                                <div>
+                                    <p>About</p>
+                                    <ul class="nav-lists">
+                                        <li><a href="aboutus.html">- About Us</a></li>
+                                        <li><a href="ourteam.html">- Management</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class=" navbar--item">
+                                <div>
+                                    <p>AVIDIO</p>
+                                    <ul class="nav-lists">
+                                        <li> <a href="avidioplatform.html">- AVIDIO</a></li>
+                                        <li><a href="carg201.html">- CARG-201</a></li>
+                                        <li> <a href="carg2020.html">- CARG-2020</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class=" navbar--item"><a href="./pipeline.html">Pipeline</a></li>
+                            <li class=" navbar--item"><a href="./news.html">News</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mask"></div>
+                </div>
+                <!--  -->
+                <div class="menu ">
+
+                    <ul class="menu-items flex gap-10 ">
+                        <li class="menu-item">
+                            <a class="current" href="./index.html">Home</a>
+                        </li>
+                        <li class=" dropdown dropdown-2 menu-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">About</button>
+                                <div class="dropdown-content">
+                                    <a href="aboutus.html">About Us</a>
+                                    <a href="ourteam.html"> Management</a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">AVIDIO</button>
+                                <div class="dropdown-content">
+                                    <a href="avidioplatform.html">AVIDIO</a>
+                                    <a href="carg201.html">CARG-201</a>
+                                    <a href="carg2020.html"> CARG-2020</a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-item"><a class="bbb" href="./pipeline.html">Pipeline</a></li>
+                        <li class="menu-item"><a class="bbb" href="./news.html">News</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="slider-1 banner-img1">
+            <div class="container mx-auto pt-2 pb-12 wow fadeIn">
+                <div class="text-center">
+                    <img src="./images/logo/banner-logo.png" class="inline-block banner-logo md:mt-6 mt-1" alt="icon" />
+                    <p class="popins-line md:text-2xl sm:text-lg md:pt-0 my-6">Developer of the novel AVIDIO Platform
+                    </p>
+                    <img src="./images/home/avidio.png" class="inline-block avidio-logo" alt="icon" />
+                    <div class="grid md:grid-cols-4 grid-cols-2 gap-4 md:pt-20 pt-6 ">
+                        <div class="wow fadeInUp " data-wow-duration="1s" data-wow-delay="0.5s">
+                            <img src="./images/home/noun-rna-5552167.png" class="inline-block" alt="icon" />
+                            <p class="lg:text-2xl md:text-xl text-sm">
+                                RNA-based artificial<br />
+                                virus platform
+                            </p>
+                        </div>
+                        <div class="wow fadeInUp " data-wow-duration="1s" data-wow-delay="1s">
+                            <img src="./images/home/noundiseases.png" class="inline-block" alt="icon" />
+                            <p class="lg:text-2xl md:text-xl text-sm mt-2">
+                                Capacity to deliver <br />
+                                multiple transgenes<br />
+                            </p>
+                        </div>
+                        <div class="wow fadeInUp mt-3" data-wow-duration="2s" data-wow-delay="1.5s">
+                            <img src="./images/home/Vector 459.png" class="inline-block mb-2" alt="icon" />
+                            <p class="lg:text-2xl md:text-xl text-sm mt-3">
+                                Broad spectrum of <br />
+                                immune responses <br />
+                            </p>
+                        </div>
+                        <div class="wow fadeInUp mt-3" data-wow-duration="2s" data-wow-delay="2s">
+                            <img src="./images/home/noun-oncology-4453777 1.png" class="inline-block" alt="icon" />
+                            <p class="lg:text-2xl md:text-xl text-sm mt-3">
+                                Focus on <br />
+                                immuno-oncology<br />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="about-bg wow fadeIn">
+            <div class="container mx-auto">
+                <div class="grid md:grid-cols-4 gap-4">
+                    <div class="col-span-3 md:pt-24 pt-10 md:pb-12 pt-10">
+                        <img src="./images/home/About-us.png" alt="icon" />
+                        <h2 class="md:text-6xl text-lg  font-semibold md:mt-4 mt-4">CaroGen Highlights</h2>
+                        <div class="mt-1 mt-14 home-about-style md:text-left text-center">
+                            <div class="md:mt-0 mt-4">
+                                <img src="./images/home/Heading.png" class="inline-block number-img mt-1" alt="icon" />
+
+                                <p
+                                    class="text-2xl md:text-left text-center text-white  md:ml-5 md:mt-0 mt-4 ml-0 mb-5 wow fadeInUp inline-block">
+                                    Developed novel AVIDIO platform
+                                    that delivers multiple transgenes<br /><span>Artificial Virus for Infectious
+                                        Diseases &
+                                        Immuno-Oncology</span></p>
+                                <img src="./images/home/Base Line.png" alt="Base Line" class="base-line" />
+                            </div>
+                        </div>
+
+                        <div class="mt-1 mt-14 home-about-style md:text-left text-center">
+                            <div class="md:mt-0 mt-4">
+                                <img src="./images/Heading2.png" class="inline-block number-img mt-1" alt="icon" />
+
+                                <p
+                                    class="text-2xl md:text-left text-center text-white  md:ml-5 ml-0 md:mt-0 mt-4 mb-5 wow fadeInUp inline-block">
+                                    Two candidates in late stage pre-clinical (IND enabling) studies <br /><span>
+                                        CARG-2020 for ovarian cancer; CARG-201 for Chronic Hepatitis B</span>
+                                </p>
+                                <img src="./images/home/Base Line.png" alt="Base Line" class="base-line" />
+                            </div>
+                        </div>
+
+
+                        <div class="mt-1 mt-14 home-about-style md:text-left text-center">
+                            <div class="md:mt-0 mt-4">
+                                <img src="./images/Heading3.png" class="inline-block number-img mt-1" alt="icon" />
+                                <p
+                                    class="text-2xl md:text-left text-center text-white md:mt-0 mt-4  md:ml-5 ml-0 mb-5 wow fadeInUp inline-block">
+                                    Broad and expanding patent portfolio <br /><span>
+                                        Issued composition of matter and methods of use patents</span>
+                                </p>
+                                <img src="./images/home/Base Line.png" class="base-line" />
+                            </div>
+                        </div>
+                        <div class="md:flex mt-14 home-about-style">
+                            <div class="mt-1 md:text-left text-center">
+                                <img src="./images/Heading4.png" class="inline-block" />
+                            </div>
+                            <div class="md:mt-0 mt-4">
+                                <p class="text-2xl md:text-left text-center text-white  md:ml-5 ml-0 mb-5 wow fadeInUp">
+                                    HBV program supported by over $10 million in NIH & DoD grants <br /><span>
+                                        Expect continued support for Phase 1 clinical studies</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-pattern-image"><img src="./images/home/Pattern.png" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="Logos-sec md:py-10 py-5  wow fadeIn">
+            <div class="container mx-auto">
+                <div class="grid md:grid-cols-3 gap-3 ml-6 mr-6 md:py-16 py-4">
+                    <div class="text-center wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
+                        <a href="./avidioplatform.html"> <img src="./images/home/image 80.png" class="inline-block"
+                                alt="log" />
+                            <p class="md:text-2xl text-lg md:mt-0 mt-3 text-white">
+                                AVIDIO<br />
+                                Platform
+                            </p>
+                            <p class="read-more mt-5">Read More<img src="./images/home/arrow_right_alt.png"
+                                    class="inline" alt="log" /></p>
+                        </a>
+                    </div>
+                    <div class="text-center wow fadeIn" data-wow-duration="2s" data-wow-delay="1s">
+                        <a href="./carg201.html"> <img src="./images/home/image 80.png" alt="log"
+                                class="inline-block" />
+                            <p class="md:text-2xl text-lg md:mt-0 mt-3 text-white">
+                                CARG-201<br />
+                                Chronic Hepatitis B </p>
+                            <p class="read-more mt-5"><a href="./carg201.html">Read More<img
+                                        src="./images/home/arrow_right_alt.png" class="inline " alt="log" /></p>
+                        </a>
+                    </div>
+                    <div class="text-center wow fadeIn" data-wow-duration="2s" data-wow-delay="1.5s">
+                        <a href="./carg2020.html"> <img src="./images/home/image 80.png" alt="log"
+                                class="inline-block" />
+                            <p class="md:text-2xl text-lg md:mt-0 mt-3 text-white">
+                                CARG-2020<br />
+                                Oncology
+                            </p>
+                            <p class="read-more mt-5">Read More<img src="./images/home/arrow_right_alt.png"
+                                    class="inline" alt="log" /></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-sec py-10 wow fadeIn">
+            <div class="container mx-auto">
+                <div class="grid md:grid-cols-3 gap-3">
+                    <div class="md:mr-5  wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s"><img
+                            src="./images/home/content1.png" class="w-full h-full" alt="content-img" /></div>
+                    <div class="md:mr-5 md:mt-0 mt-4 wow fadeIn" data-wow-duration="2s" data-wow-delay="1s"><img
+                            src="./images/home/content2.png" class="w-full h-full" alt="content-img" /></div>
+                    <div class="wow md:mt-0 mt-4 fadeIn" data-wow-duration="2s" data-wow-delay="1.5s"><img
+                            src="./images/home/content3.png" class="w-full h-full" alt="content-img" /></div>
+                </div>
+            </div>
+        </div>
+        <section class="founder md:pt-28 py-10 md:pb-20">
+            <div class="container mx-auto text-center wow fadeIn">
+                <div class="title-sm flex justify-center items-center">
+                    <div class="box w-2 h-2 border-r-2 border-2 block mr-3"></div>
+                    <h6>Our Team</h6>
+                </div>
+
+                <h2 class="text-6xl font-semibold text-white mt-6">Founders</h2>
+                <div class="grid md:grid-cols-4 gap-4 md:pt-16 pt-6 md:ml-14 md:mr-14">
+                    <div class="wow fadeIn " data-wow-duration="1s" data-wow-delay="0.5s">
+                        <img src="./images/home/Frame 3529.png" class="inline-block" alt="founders-img" />
+                        <p class="text-white font-semibold text-xl mt-5">Bijan Almassian, phD</p>
+                        <p>Chief Executive Officer</p>
+                    </div>
+                    <div class="wow fadeIn " data-wow-duration="1s" data-wow-delay="1s">
+                        <img src="./images/home/Frame 3530.png" class="inline-block" alt="founders-img" />
+                        <p class="text-white font-semibold text-xl mt-5">Valerian Nakaar, PhD</p>
+                        <p>Chief Scientific Officer</p>
+                    </div>
+                    <div class="wow fadeIn " data-wow-duration="1s" data-wow-delay="1.5s">
+                        <img src="./images/home/Frame 3531.png" class="inline-block" alt="founders-img" />
+                        <p class="text-white font-semibold text-xl mt-5">John Rose, PhD</p>
+                        <p>Chairman <br> Scientific Advisory Board</p>
+                    </div>
+                    <div class="wow fadeIn " data-wow-duration="1s" data-wow-delay="2s">
+                        <img src="./images/home/Frame 3528.png" class="inline-block" alt="founders-img" />
+                        <p class="text-white font-semibold text-xl mt-5">Michael Robek, PhD</p>
+                        <p>Member <br> Scientific Advisory Board</p>
+                    </div>
+                </div>
+                <div class="text-center text-lg text-white md:mt-20 mt-10 see-all-member wow fadeIn">
+                    <p class="see-all-member"><a href="./ourteam.html" class="sm:text-sm">See all team members</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!--new slider-->
+        <div class="slider-bg  wow fadeIn desktop-slider">
+            <div class="md:pt-16 md:pb-0 pt-8 pb-3 mobile-slider-gap ">
+                <div class="">
+                    <div class="title-sm flex items-center">
+                        <div class="box w-2 h-2 border-r-2 border-2 block mr-3"></div>
+                        <h6>Our Press Releases</h6>
+                    </div>
+                    <h2 class="text-6xl text-lg  text-white font-semibold md:mt-4 mt-4"><a href="./news.html">CaroGen
+                            News.</a></h2>
+
+                </div>
+                <div class="owlslider owl-carousel owl-theme mt-10 ">
+                    <div target="1" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">Dr Alvero on Antitumor Immunological Memory in Ovarian Cancer Models
+                        </p>
+                        <p class="mt-3">Ayesha Alvero, MD, MSc, professor, Department of Obstetrics and Gynecology,
+                            Wayne State...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://www.onclive.com/view/dr-alvero-on-antitumor-immunological-memory-in-ovarian-cancer-models"
+                                target="_blank">Read
+                                More</a> <img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="2" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">Novel Immunomodulatory virus CARG-2020 for Recurrent ovarian cancer
+                        </p>
+                        <p class="mt-3">At the 2023 Society of Gynecological
+                            Oncology’s Annual Meeting on Women’s Cancer in Tampa,...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://www.hmpgloballearningnetwork.com/site/onc/videos/novel-immunomodulatory-virus-carg-2020-recurrent-ovarian-cancer"
+                                target="_blank">Read
+                                More </a><img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="3" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">CaroGen’s
+                            CARG-2020 Preclinical Data on Ovarian Cancer Immunotherapy...
+                        </p>
+                        <p class="mt-3">Farmington, CT, November 8, 2022 – CaroGen
+                            Corporation (https://carogencorp.com)...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://carogencorp.com/wp-content/uploads/2022/11/CaroGen-Press-Release-November-8-2022-final.pdf"
+                                target="_blank">Read
+                                More</a> <img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="4" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">CaroGen
+                            Management to Speak at The World Vaccine & Immunotherapy Congress </p>
+                        <p class="mt-3">Farmington, CT, September 5, 2022– CaroGen
+                            Corporation (https://carogencorp.com)...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://carogencorp.com/wp-content/uploads/2022/09/CaroGen-Press-Release-September-3-2022.pdf"
+                                target="_blank">Read
+                                More</a> <img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="5" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">Bijan Almassian,
+                            PhD. on LinkedIn: CaroGen in pact with NIH to develop flu vaccine...
+                        </p>
+                        <p class="mt-3">We are honored to be working with NIAID/NIH
+                            scientists to develop a universal influenza vaccine...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://bioct.org/2021/01/06/carogen-in-pact-with-nih-to-develop-flu-vaccine/"
+                                target="_blank">Read
+                                More </a><img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="6" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">“Relational
+                            Contract” Supports Outsourcing Of Hepatitis B Immunotherapy</p>
+                        <p class="mt-3">Striving to develop CARG-201 as a novel immunotherapy for potential
+                            functional
+                            cure of over 250 million patients worldwide...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://www.outsourcedpharma.com/doc/relational-contract-supports-outsourcing-of-hepatitis-b-immunotherapy-0001"
+                                target="_blank">Read
+                                More </a><img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="7" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">CaroGen and Wayne
+                            State University scientists report significant progress...
+                        </p>
+                        <p class="mt-3">Farmington, Conn., Oct. 25, 2020 –
+                            Privately-held CaroGen Corp., in collaboration with a team of scientists...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://today.wayne.edu/news/2020/10/27/carogen-and-wayne-state-university-scientists-report-significant-progress-on-development-of-carg-2020-for-the-potential-treatment-of-ovarian-cancer-40844"
+                                target="_blank">Read
+                                More </a> <img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="8" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white ">UConn Health,
+                            CaroGen Collaborate on Promising Technology...
+                        </p>
+                        <p class="mt-3">UConn Health researchers, along with
+                            industry partners, have developed a promising potential candidate...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://today.uconn.edu/2020/08/uconn-health-carogen-collaborate-promising-technology-colorectal-cancer-treatment/"
+                                target="_blank">Read
+                                More</a> <img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:block flex justify-center md:mb-0 pb-10">
+                <button class="explore-more-btn"><a href="./news.html">Explore latest news</a></button>
+            </div>
+        </div>
+
+        <!--mobile slider-->
+        <div class="slider-bg  wow fadeIn mobile-slider">
+            <div class="md:pt-16 md:pb-0  container mx-auto  pt-8 pb-3 ">
+                <div class="">
+                    <div class="title-sm flex items-center">
+                        <div class="box w-2 h-2 border-r-2 border-2 block mr-3"></div>
+                        <h6>Our Press Releases</h6>
+                    </div>
+                    <h2 class="text-6xl text-lg  text-white font-semibold md:mt-4 mt-4"><a href="./news.html">CaroGen
+                            News.</a></h2>
+
+                </div>
+                <div class="owlslider owl-carousel owl-theme mt-10 ">
+                    <div target="1" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">Dr Alvero on Antitumor Immunological Memory in Ovarian Cancer Models
+                        </p>
+                        <p class="mt-3">Ayesha Alvero, MD, MSc, professor, Department of Obstetrics and Gynecology,
+                            Wayne State...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://www.onclive.com/view/dr-alvero-on-antitumor-immunological-memory-in-ovarian-cancer-models"
+                                target="_blank">Read
+                                More</a> <img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="2" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">Novel Immunomodulatory virus CARG-2020 for Recurrent ovarian cancer
+                        </p>
+                        <p class="mt-3">At the 2023 Society of Gynecological
+                            Oncology’s Annual Meeting on Women’s Cancer in Tampa,...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://www.hmpgloballearningnetwork.com/site/onc/videos/novel-immunomodulatory-virus-carg-2020-recurrent-ovarian-cancer"
+                                target="_blank">Read
+                                More </a><img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="3" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">CaroGen’s
+                            CARG-2020 Preclinical Data on Ovarian Cancer Immunotherapy...
+                        </p>
+                        <p class="mt-3">Farmington, CT, November 8, 2022 – CaroGen
+                            Corporation (https://carogencorp.com)...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://carogencorp.com/wp-content/uploads/2022/11/CaroGen-Press-Release-November-8-2022-final.pdf"
+                                target="_blank">Read
+                                More</a> <img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="4" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">CaroGen
+                            Management to Speak at The World Vaccine & Immunotherapy Congress </p>
+                        <p class="mt-3">Farmington, CT, September 5, 2022– CaroGen
+                            Corporation (https://carogencorp.com)...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://carogencorp.com/wp-content/uploads/2022/09/CaroGen-Press-Release-September-3-2022.pdf"
+                                target="_blank">Read
+                                More</a> <img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="5" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">Bijan Almassian,
+                            PhD. on LinkedIn: CaroGen in pact with NIH to develop flu vaccine...
+                        </p>
+                        <p class="mt-3">We are honored to be working with NIAID/NIH
+                            scientists to develop a universal influenza vaccine...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://bioct.org/2021/01/06/carogen-in-pact-with-nih-to-develop-flu-vaccine/"
+                                target="_blank">Read
+                                More </a><img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="6" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">“Relational
+                            Contract” Supports Outsourcing Of Hepatitis B Immunotherapy</p>
+                        <p class="mt-3">Striving to develop CARG-201 as a novel immunotherapy for potential
+                            functional
+                            cure of over 250 million patients worldwide...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://www.outsourcedpharma.com/doc/relational-contract-supports-outsourcing-of-hepatitis-b-immunotherapy-0001"
+                                target="_blank">Read
+                                More </a><img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="7" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white">CaroGen and Wayne
+                            State University scientists report significant progress...
+                        </p>
+                        <p class="mt-3">Farmington, Conn., Oct. 25, 2020 –
+                            Privately-held CaroGen Corp., in collaboration with a team of scientists...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://today.wayne.edu/news/2020/10/27/carogen-and-wayne-state-university-scientists-report-significant-progress-on-development-of-carg-2020-for-the-potential-treatment-of-ovarian-cancer-40844"
+                                target="_blank">Read
+                                More </a><img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                    <div target="8" class="item swiper-slide pt-7 pr-9 pb-10 pl-9">
+                        <p class="text-white ">UConn Health,
+                            CaroGen Collaborate on Promising Technology...
+                        </p>
+                        <p class="mt-3">UConn Health researchers, along with
+                            industry partners, have developed a promising potential candidate...</p>
+                        <p class="mt-11 font-semibold text-white"><a
+                                href="https://today.uconn.edu/2020/08/uconn-health-carogen-collaborate-promising-technology-colorectal-cancer-treatment/"
+                                target="_blank">Read
+                                More</a> <img src="./images/home/arrow_right_alt.png" class="inline-block ml-3"
+                                alt="right-arrow">
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="md:block flex justify-center md:mb-0 pb-10">
+                <button class="explore-more-btn"><a href="./news.html">Explore latest news</a></button>
+            </div>
+        </div>
+        <footer class="footer-bg md:py-16 py-10 ">
+            <div class="container mx-auto text-center">
+                <div class="footer-logo"> <img src="./images/footer-logo.png" class="mb-16" /></div>
+                <div class="grid md:grid-cols-3 gap-4 mt-16 ">
+
+
+                    <div class="flex justify-between">
+                        <div>
+                            <ul class="text-left ">
+                                <li><a href="./aboutus.html">About us</a></li>
+                                <li class="mt-5"><a href="./ourteam.html">Management</a></li>
+                                <li class="mt-5"><a href="./news.html">News</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="text-left">
+                                <li><a href="./avidioplatform.html">Avidio</a></li>
+                                <li class="mt-5"><a href="./carg201.html">CARG-201</a></li>
+                                <li class="mt-5"><a href="./carg2020.html">CARG-2020</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="text-left text-white md:mt-0 mt-8">
+                        <h5> Address</h5>
+                        <p class="mt-4">Cell & Genome Sciences Building R2802 <br> 400, Farmington Ave,<br>
+                            Farmington,
+                            CT
+                            06032</p>
+                        <p class="mt-4"><img src="./images/mail_outline.png" class="mr-1 inline-block">
+                            info@carogencorp.com</p>
+                    </div>
+                    <div class="md:mt-0 mt-4">
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.4785077611814!2d-72.80235692318571!3d41.73177067125819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7ade0dda3f221%3A0x1b191871f6a48f2!2sCell%20%26%20Genome%20Sciences%20Building!5e0!3m2!1sen!2sin!4v1692856263413!5m2!1sen!2sin"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right">
+                    <p cla>copyright© 2023 Carogen Corporation.</p>
+                </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+        integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./js/lib/swiper-bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/smooth-scroll/smooth.js"></script>
+    <script src="./js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <script>
+
+        jQuery(document).ready(function ($) {
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                loop: true,
+                autoplay: 3000,
+                items: 3,
+                margin: 20,
+                responsive: {
+                    0: {
+                        items: 1
+                        // nav: true
+                    },
+                    480: {
+                        items: 1,
+                        nav: true
+                    },
+                    768: {
+                        items: 1,
+                        // nav: true,
+                        loop: true
+                    },
+                    992: {
+                        items: 2,
+                        // nav: true,
+                        loop: true
+                    },
+                    1200: {
+                        items: 2.5,
+                        // nav: true,
+                        loop: true
+                    }
+                },
+
+            });
+
+            $(".next").click(function () {
+                owl.trigger("owl.next");
+            });
+            $(".prev").click(function () {
+                owl.trigger("owl.prev");
+            });
+        });
+
+
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 10, // default
+            mobile: true, // default
+            live: true // default
+        });
+        wow.init();
+        // const header = document.querySelector('header');
+        // const toggleClass = "is-sticky";
+
+        // window.addEventListener('scroll', () => {
+        //     if (window.scrollY > 100) {
+        //         header.classList.add(toggleClass);
+        //     } else {
+        //         header.classList.remove(toggleClass);
+        //     }
+        // });
+        document.addEventListener("DOMContentLoaded", function () {
+            // Dropdown Behavior
+            var linksWithDropdown = document.querySelectorAll("nav ul li a:not(:only-child)");
+            linksWithDropdown.forEach(function (link) {
+                link.addEventListener("click", function (e) {
+                    var siblingDropdown = this.nextElementSibling;
+                    if (siblingDropdown) {
+                        siblingDropdown.style.display = siblingDropdown.style.display === "block" ? "none" : "block";
+                        var allDropdowns = document.querySelectorAll(".nav-dropdown");
+                        allDropdowns.forEach(function (dropdown) {
+                            if (dropdown !== siblingDropdown) {
+                                dropdown.style.display = "none";
+                            }
+                        });
+                        e.stopPropagation();
+                    }
+                });
+            });
+
+            // Closing Dropdowns on Click Away
+            document.addEventListener("click", function () {
+                var allDropdowns = document.querySelectorAll(".nav-dropdown");
+                allDropdowns.forEach(function (dropdown) {
+                    dropdown.style.display = "none";
+                });
+            });
+
+            // Toggle Nav on Hamburger Icon Click
+            // var navToggle = document.getElementById("nav-toggle");
+            // navToggle.addEventListener("click", function () {
+            //     var navUL = document.querySelector("nav ul");
+            //     navUL.style.display = navUL.style.display === "block" ? "none" : "block";
+            // });
+
+            // // Hamburger to X Animation
+            // navToggle.addEventListener("click", function () {
+            //     this.classList.toggle("active");
+            // });
+        });
+
+        $(function () {
+            $(".hamburger-menu").click(function () {
+                debugger;
+                $(".sliding-navbar").toggleClass("sliding-navbar--open");
+                $(".mask").toggleClass("show");
+                $(".hamburger").toggleClass("menu-opened");
+            });
+
+            $(".mask").click(function () {
+                $(".sliding-navbar").toggleClass("sliding-navbar--open");
+                $(".mask").removeClass("show");
+                $(".hamburger").toggleClass("menu-opened");
+            });
+        });
+        var btn = $('#button');
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+        const scrollToTopBtn = document.getElementById('button');
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+
+        $(document).ready(function () {
+            $("#myCheckbox").change(function () {
+                if ($(this).is(":checked")) {
+                    $(".sliding-navbar").toggleClass("sliding-navbar--open");
+                    $(".mask").toggleClass("show");
+                    $(".hamburger").toggleClass("menu-opened");
+                } else {
+                    $(".sliding-navbar").toggleClass("sliding-navbar--open");
+                    $(".mask").removeClass("show");
+                    $(".hamburger").toggleClass("menu-opened");
+                }
+            });
+        });
+
+    </script>
+
+
+</body>
+
+</html>

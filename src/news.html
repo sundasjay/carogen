@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CaroGen Corporation</title>
+    <link rel="icon" type="image/png" href="./images/home/vector.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <!-- build:css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="./scss/components/_header.scss" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
+    <!-- build:css -->
+    <link rel="stylesheet" href="css/tailwind.css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="css/lib/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+</head>
+
+<body class=" wow fadeIn">
+    <a id="button"></a>
+    <header class="page-header">
+        <div class="container mx-auto">
+            <nav class="flex justify-between items-center navbar">
+                <div class="brandLogo">
+                    <a href="./index.html"> <img src="./images/footer-logo.png" /></a>
+                </div>
+                <div class="nav-res">
+                    <div class="menuToggle">
+                        <input type="checkbox" id="myCheckbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <nav class="sliding-navbar" role="navigation">
+
+                        <ul class="menuItem navbar--items">
+                            <li class=" navbar--item">
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li class=" dropdown dropdown-2  navbar--item">
+                                <div>
+                                    <p>About</p>
+                                    <ul class="nav-lists">
+                                        <li><a href="aboutus.html">- About Us</a></li>
+                                        <li><a href="ourteam.html">- Management</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class=" navbar--item">
+                                <div>
+                                    <p>AVIDIO</p>
+                                    <ul class="nav-lists">
+                                        <li> <a href="avidioplatform.html">- AVIDIO</a></li>
+                                        <li><a href="carg201.html">- CARG-201</a></li>
+                                        <li> <a href="carg2020.html">- CARG-2020</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class=" navbar--item"><a href="./pipeline.html">Pipeline</a></li>
+                            <li class=" navbar--item"><a class="current" href="./news.html">News</a></li>
+                        </ul>
+                    </nav>
+                    <div class="mask"></div>
+                </div>
+                <div class="menu">
+                    <ul class="menu-items flex gap-10">
+                        <li class="menu-item">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class=" dropdown dropdown-2 menu-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">About</button>
+                                <div class="dropdown-content">
+                                    <a href="aboutus.html">About Us</a>
+                                    <a href="ourteam.html"> Management</a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <div class="dropdown">
+                                <button class="dropbtn">AVIDIO</button>
+                                <div class="dropdown-content">
+                                    <a href="avidioplatform.html">AVIDIO</a>
+                                    <a href="carg201.html">CARG-201</a>
+                                    <a href="carg2020.html"> CARG-2020</a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-item"><a href="./pipeline.html">Pipeline</a></li>
+                        <li class="menu-item"><a class="current" href="./news.html">News</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="news-slider banner-img pt-24 pb-24">
+
+            <div class="container mx-auto md:pt-44 pb-22 text-left">
+                <h4 class="text-5xl font-semibold mt-7">News</h4>
+            </div>
+        </section>
+
+        <section class="news-section slider">
+            <div class="container mx-auto md:py-20 py-10 slider-wrapper" id="prev-slider">
+                <div class="grid md:grid-cols-2 gap-10  slide">
+                    <div class="">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://www.onclive.com/view/dr-alvero-on-antitumor-immunological-memory-in-ovarian-cancer-models"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/news-img-1.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn">
+                                    <button class="text-center mr-2"><a
+                                            class="inline-flex items-center focus:outline-none">
+                                            Medical
+                                        </a></button>
+                                    <button class="text-center"><a class="inline-flex items-center ">
+                                            cancer
+                                        </a></button>
+                                </div>
+                                <a href="https://www.onclive.com/view/dr-alvero-on-antitumor-immunological-memory-in-ovarian-cancer-models"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6">Dr Alvero on
+                                        Antitumor Immunological Memory in Ovarian Cancer Models</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">Ayesha Alvero, MD, MSc, professor,
+                                    Department of Obstetrics and Gynecology, Wayne State University School of Medicine,
+                                    discusses findings from a preclinical study investigating the antitumor effects and
+                                    recurrence prevention abilities of a virus-like vesicle thought to establish
+                                    immunological memory in mouse models with ovarian cancer.</p> </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="...">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://www.hmpgloballearningnetwork.com/site/onc/videos/novel-immunomodulatory-virus-carg-2020-recurrent-ovarian-cancer"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/News-pg/news-img2.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn">
+                                    <button class="text-center mr-2"><a
+                                            class="inline-flex items-center focus:outline-none">
+                                            Medical
+                                        </a></button>
+                                    <button class="text-center"><a class="inline-flex items-center ">
+                                            Network
+                                        </a></button>
+                                </div>
+                                <a href="https://www.hmpgloballearningnetwork.com/site/onc/videos/novel-immunomodulatory-virus-carg-2020-recurrent-ovarian-cancer"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6">Novel
+                                        Immunomodulatory virus CARG-2020 for Recurrent ovarian cancer</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">At the 2023 Society of Gynecological
+                                    Oncology’s Annual Meeting on Women’s Cancer in Tampa, Florida, Ayesha Alvero, MD,
+                                    C.S. Mott Center at Wayne State University, Detroit, Michigan, discusses the use of
+                                    the novel immunomodulatory virus CARG-2020 to restore immunosurveillance and
+                                    establish anti-tumoral immunological memory to prevent ovarian cancer recurrence.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="...">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://carogencorp.com/wp-content/uploads/2022/11/CaroGen-Press-Release-November-8-2022-final.pdf"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/News-pg/news-img3.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn">
+                                    <button class="text-center"><a class="inline-flex items-center focus:outline-none">
+                                            Medical
+                                        </a></button>
+
+                                </div>
+                                <a href="https://carogencorp.com/wp-content/uploads/2022/11/CaroGen-Press-Release-November-8-2022-final.pdf"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6"> CaroGen’s
+                                        CARG-2020 Preclinical Data on Ovarian Cancer Immunotherapy to be Presented
+                                        Orally at the Society of Gynecologic Oncology Annual Meeting</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">Farmington, CT, November 8, 2022 – CaroGen
+                                    Corporation (https://carogencorp.com), a developer of
+                                    transformative immunotherapies for cancer and infectious diseases, today announced
+                                    that new preclinical
+                                    data about the mechanism of action of CaroGen’s novel ovarian cancer immunotherapy,
+                                    CARG-2020,</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="...">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://carogencorp.com/wp-content/uploads/2022/09/CaroGen-Press-Release-September-3-2022.pdf"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/News-pg/news-img4.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn">
+                                    <button class="text-center mr-2"><a
+                                            class="inline-flex items-center focus:outline-none">
+                                            Medical
+                                        </a></button>
+                                    <button class="text-center"><a class="inline-flex items-center ">
+                                            cancer
+                                        </a></button>
+                                </div>
+                                <a href="https://carogencorp.com/wp-content/uploads/2022/09/CaroGen-Press-Release-September-3-2022.pdf"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6">CaroGen
+                                        Management to Speak at The World Vaccine & Immunotherapy Congress </h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">Farmington, CT, September 5, 2022– CaroGen
+                                    Corporation (https://carogencorp.com), a developer of transformative immunotherapies
+                                    for cancer and infectious diseases, today announced that Bijan Almassian, PhD,
+                                    President & CEO, </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="...">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://bioct.org/2021/01/06/carogen-in-pact-with-nih-to-develop-flu-vaccine/"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/News-pg/news-img-5.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn">
+                                    <button class="text-center mr-2"><a
+                                            class="inline-flex items-center focus:outline-none">
+                                            Education
+                                        </a></button>
+                                    <button class="text-center"><a class="inline-flex items-center ">
+                                            Social
+                                        </a></button>
+                                </div>
+                                <a href="https://bioct.org/2021/01/06/carogen-in-pact-with-nih-to-develop-flu-vaccine/"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6"> Bijan Almassian,
+                                        PhD. on LinkedIn: CaroGen in pact with NIH to develop flu vaccine – BioCT | 21
+                                        comments</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">We are honored to be working with NIAID/NIH
+                                    scientists to develop a universal influenza vaccine.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="...">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://www.outsourcedpharma.com/doc/relational-contract-supports-outsourcing-of-hepatitis-b-immunotherapy-0001"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/News-pg/news-img-6.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn">
+                                    <button class="text-center mr-2"><a
+                                            class="inline-flex items-center focus:outline-none">
+                                            Medical
+                                        </a></button>
+                                    <button class="text-center"><a class="inline-flex items-center ">
+                                            cancer
+                                        </a></button>
+                                </div>
+                                <a href="https://www.outsourcedpharma.com/doc/relational-contract-supports-outsourcing-of-hepatitis-b-immunotherapy-0001"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6"> “Relational
+                                        Contract” Supports Outsourcing Of Hepatitis B Immunotherapy</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">Striving to develop CARG-201 as a novel
+                                    immunotherapy for potential functional cure of over 250 million patients worldwide
+                                    chronically infected with hepatitis B virus (HBV). Currently there is no cure for
+                                    HBV.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="...">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://today.wayne.edu/news/2020/10/27/carogen-and-wayne-state-university-scientists-report-significant-progress-on-development-of-carg-2020-for-the-potential-treatment-of-ovarian-cancer-40844"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/News-pg/news-img-7.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn">
+                                    <button class="text-center mr-2"> <a
+                                            class="inline-flex items-center focus:outline-none">
+                                            Medical
+                                        </a></button>
+                                    <button class="text-center"> <a class="inline-flex items-center ">
+                                            cancer
+                                        </a></button>
+                                </div>
+                                <a href="https://today.wayne.edu/news/2020/10/27/carogen-and-wayne-state-university-scientists-report-significant-progress-on-development-of-carg-2020-for-the-potential-treatment-of-ovarian-cancer-40844"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6">CaroGen and Wayne
+                                        State University scientists report significant progress on development of
+                                        CARG-2020 for the potential treatment of ovarian cancer
+                                    </h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">Farmington, Conn., Oct. 25, 2020 –
+                                    Privately-held CaroGen Corp., in collaboration with a team of scientists at the C.S.
+                                    Mott Center for Human Growth and Development at Wayne State University..</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="...">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://today.uconn.edu/2020/08/uconn-health-carogen-collaborate-promising-technology-colorectal-cancer-treatment/"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/News-pg/news-img-10.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn mr-2">
+                                    <button class="text-center mr-2"> <a
+                                            class="inline-flex items-center focus:outline-none">
+                                            Medical
+                                        </a></button>
+                                    <button class="text-center"> <a class="inline-flex items-center ">
+                                            cancer
+                                        </a></button>
+                                </div>
+                                <a href="https://today.uconn.edu/2020/08/uconn-health-carogen-collaborate-promising-technology-colorectal-cancer-treatment/"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6">UConn Health,
+                                        CaroGen Collaborate on Promising Technology for Colorectal Cancer Treatment</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">UConn Health researchers, along with
+                                    industry partners, have developed a promising potential candidate for treating
+                                    colorectal cancer.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- next slider start -->
+            <div class="container mx-auto pt-20 pb-20 slider-wrapper wow fadeIn" style="display: none;"
+                id="next-slider">
+                <div class="grid md:grid-cols-2 gap-10  slide">
+
+                    <div class="...">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://www.outsourcedpharma.com/doc/hepatitis-b-functional-cure-on-the-way-a-cdmo-helps-out-0001"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/News-pg/news-second-one.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn">
+                                    <button class="text-center mr-2"><a
+                                            class="inline-flex items-center focus:outline-none">
+                                            Medical
+                                        </a></button>
+                                    <button class="text-center"><a class="inline-flex items-center ">
+                                            cancer
+                                        </a></button>
+                                </div>
+                                <a href="https://www.outsourcedpharma.com/doc/hepatitis-b-functional-cure-on-the-way-a-cdmo-helps-out-0001"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6">Hepatitis B
+                                        “Functional Cure” On The Way? A CDMO Helps Out</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">Great to have an interview with Louis
+                                    Garguilo, Chief Editor, Outsourced Pharma regarding to one of our lead products,
+                                    CARG-201 for potential functional cure of patients chronically infected with HBV.
+                                </p> </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="...">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://www.hartfordbusiness.com/article/2021-tech-25-carogen-targets-breakthrough-immunotherapy-drug"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/News-pg/news-second-two.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn">
+                                    <button class="text-center mr-2"><a
+                                            class="inline-flex items-center focus:outline-none">
+                                            Medical
+                                        </a></button>
+                                    <button class="text-center"><a class="inline-flex items-center ">
+                                            Network
+                                        </a></button>
+                                </div>
+                                <a href="https://www.hartfordbusiness.com/article/2021-tech-25-carogen-targets-breakthrough-immunotherapy-drug"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6">2021 Tech 25:
+                                        CaroGen targets breakthrough immunotherapy drug</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">Very honored to be selected by Hartford
+                                    Business Journal as one of top 25 technology companies in state of Connecticut. We
+                                    develop breakthrough immunotherapies and vaccines for cancer and infectious
+                                    diseases.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="...">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://globalbusinessleadersmag.com/bijan-almassian-striving-to-build-super-vaccines-and-immunotherapies/"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/News-pg/news-second-three.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn">
+                                    <button class="text-center mr-2"> <a
+                                            class="inline-flex items-center focus:outline-none">
+                                            Medical
+                                        </a></button>
+
+                                </div>
+                                <a href="https://globalbusinessleadersmag.com/bijan-almassian-striving-to-build-super-vaccines-and-immunotherapies/"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6">Bijan Almassian :
+                                        Striving To Build Super Vaccines and Immunotherapies – Global Business Leaders
+                                        Mag</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">Bijan Almassian : Striving To Build Super
+                                    Vaccines and Immunotherapies While the coronavirus has caused havoc throughout the
+                                    globe. Another such disease that has haunted humanity for years is cancer.
+                                    Throughout the years, many cancer researchers have…</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="...">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://thehealthcareinsights.com/carogen-corporation-improving-health-around-the-globe-by-developing-transformative-vaccines-and-immunotherapy/"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/News-pg/news-second-four.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn">
+                                    <button class="text-center mr-2"> <a
+                                            class="inline-flex items-center focus:outline-none">
+                                            Medical
+                                        </a></button>
+                                    <button class="text-center"> <a class="inline-flex items-center ">
+                                            cancer
+                                        </a></button>
+                                </div>
+                                <a href="https://thehealthcareinsights.com/carogen-corporation-improving-health-around-the-globe-by-developing-transformative-vaccines-and-immunotherapy/"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6">CaroGen
+                                        Corporation: Improving Health around the Globe by Developing Transformative
+                                        Vaccines and Immunotherapy</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">It is humbling to be recognized by
+                                    Healthcare Insight magazine as 10 most advanced biotech startups of 2021.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="...">
+                        <div class="    shadow dark:bg-gray-800 dark:border-gray-700 news-card">
+                            <a href="https://www.hartfordbusiness.com/article/carogens-hepatitis-b-vaccine-recommended-for-68m-in-federal-funding"
+                                target="_blank">
+                                <img class="rounded-t-lg w-full" src="./images/News-pg/news-second-five.png" alt="" />
+                            </a>
+                            <div class="p-5">
+                                <div class="news-card-btn mr-2">
+                                    <button class="text-center mr-2"> <a
+                                            class="inline-flex items-center focus:outline-none">
+                                            Medical
+                                        </a></button>
+                                    \
+                                </div>
+                                <a href="https://www.hartfordbusiness.com/article/carogens-hepatitis-b-vaccine-recommended-for-68m-in-federal-funding"
+                                    target="_blank">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-white mt-6">CaroGen’s
+                                        Hepatitis B vaccine recommended for $6.8M in federal funding</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-white mt-4">We are grateful for receiving such a
+                                    significant grant by Department of Defense to advance our HBV immunotherapy into
+                                    clinic.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- pagination start -->
+            <div class="pagination md:pb-24 pb-10">
+                <ul id="pagination">
+                    <button class="mr-8" id="prevButton" onclick="handlePrev()" disabled>Prev</button>
+                    <li class="mr-2 active"><a href="#"></a></li>
+                    <li class="mr-2"><a href="#"></a></li>
+                    <button class="ml-8" id="nextButton" onclick="handleNext()">Next</button>
+                </ul>
+            </div>
+            <!-- pagination end -->
+            <!-- next slider end -->
+
+        </section>
+
+
+        <footer class="footer-bg md:py-16 py-10 ">
+            <div class="container mx-auto text-center">
+                <div class="footer-logo"> <img src="./images/footer-logo.png" class="mb-16" /></div>
+                <div class="grid md:grid-cols-3 gap-4 mt-16 ">
+                    <div class="...">
+
+                        <div class="flex justify-between">
+                            <div>
+                                <ul class="text-left ">
+                                    <li><a href="./aboutus.html">About us</a></li>
+                                    <li class="mt-5"><a href="./ourteam.html">Management</a></li>
+                                    <li class="mt-5"><a href="./news.html">News</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul class="text-left">
+                                    <li><a href="./avidioplatform.html">Avidio</a></li>
+                                    <li class="mt-5"><a href="./carg201.html">CARG-201</a></li>
+                                    <li class="mt-5"><a href="./carg2020.html">CARG-2020</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-left text-white md:mt-0 mt-8">
+                        <h5> Address</h5>
+                        <p class="mt-4">Cell & Genome Sciences Building R2802 <br> 400, Farmington Ave,<br> Farmington,
+                            CT
+                            06032</p>
+                        <p class="mt-4"><img src="./images/mail_outline.png" class="mr-1 inline-block">
+                            info@carogencorp.com</p>
+                    </div>
+                    <div class="md:mt-0 mt-4">
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2977.4785077611814!2d-72.80235692318571!3d41.73177067125819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7ade0dda3f221%3A0x1b191871f6a48f2!2sCell%20%26%20Genome%20Sciences%20Building!5e0!3m2!1sen!2sin!4v1692856263413!5m2!1sen!2sin"
+                                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right">
+                    <p cla>copyright© 2023 Carogen Corporation.</p>
+                </div>
+        </footer>
+    </main>
+    <script type="module" src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/smooth-scroll@16.1.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="./js/lib/swiper-bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/smooth-scroll/smooth.js"></script>
+
+    <script>
+
+
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 10, // default
+            mobile: true, // default
+            live: true // default
+        });
+        wow.init();
+        const header = document.querySelector('header');
+        const toggleClass = "is-sticky";
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add(toggleClass);
+            } else {
+                header.classList.remove(toggleClass);
+            }
+        });
+
+
+        const pagination = document.getElementById("pagination");
+        const listItems = pagination.querySelectorAll("li");
+        const prevButton = document.getElementById("prevButton")
+        const nextButton = document.getElementById("nextButton")
+        let currentPage = 1;
+        function handleNext() {
+            var prevSlider = document.getElementById("prev-slider")
+            var nextSlider = document.getElementById("next-slider")
+
+            prevSlider.style.display = "none";
+            nextSlider.style.display = "block";
+            debugger
+            if (currentPage < listItems.length) {
+
+                listItems[currentPage - 1].classList.remove("active");
+                currentPage++;
+                listItems[currentPage - 1].classList.add("active");
+            }
+            if (currentPage === listItems.length) {
+                nextButton.setAttribute('disabled', 'true');
+                prevButton.removeAttribute('disabled');
+            } else {
+                prevButton.removeAttribute('disabled');
+                prevButton.setAttribute('disabled', 'true');
+            }
+        }
+        function handlePrev() {
+            var prevSlider = document.getElementById("prev-slider")
+            var nextSlider = document.getElementById("next-slider")
+
+            prevSlider.style.display = "block";
+            nextSlider.style.display = "none";
+
+            if (currentPage > 1) {
+                listItems[currentPage - 1].classList.remove("active");
+                currentPage--;
+                listItems[currentPage - 1].classList.add("active");
+            }
+            debugger
+            if (currentPage === 1) {
+                prevButton.setAttribute('disabled', 'true');
+                nextButton.removeAttribute('disabled');
+
+            } else {
+                prevButton.removeAttribute('disabled');
+                nextButton.setAttribute('disabled', 'true');
+            }
+        }
+
+
+        $(function () {
+            $(".hamburger-menu").click(function () {
+                debugger;
+                $(".sliding-navbar").toggleClass("sliding-navbar--open");
+                $(".mask").toggleClass("show");
+                $(".hamburger").toggleClass("menu-opened");
+            });
+
+            $(".mask").click(function () {
+                $(".sliding-navbar").toggleClass("sliding-navbar--open");
+                $(".mask").removeClass("show");
+                $(".hamburger").toggleClass("menu-opened");
+            });
+        });
+
+        var btn = $('#button');
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+        const scrollToTopBtn = document.getElementById('button');
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+
+        $(document).ready(function () {
+            $("#myCheckbox").change(function () {
+                if ($(this).is(":checked")) {
+                    $(".sliding-navbar").toggleClass("sliding-navbar--open");
+                    $(".mask").toggleClass("show");
+                    $(".hamburger").toggleClass("menu-opened");
+                } else {
+                    $(".sliding-navbar").toggleClass("sliding-navbar--open");
+                    $(".mask").removeClass("show");
+                    $(".hamburger").toggleClass("menu-opened");
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

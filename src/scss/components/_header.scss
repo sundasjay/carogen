@@ -1,0 +1,44 @@
+.menu {
+    &-item {
+        a {
+            font-family: var(--font-roboto);
+            font-size: 18px;
+            font-weight: 500;
+            color: rgba($color: #1f1534, $alpha: 0.5);
+            transition: transform 0.35s ease-out, box-shadow 0.35s ease-out, backdrop-filter 0.35s ease-out;
+
+            &:hover,
+            &:active,
+            &.current {
+                color: #1f1534;
+                font-weight: 500;
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.page-header {
+    position: fixed;
+    width: 100%;
+    padding: 10px 0;
+
+    &.is-sticky {
+        box-shadow: 0 5px 16px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        animation: slideDown 0.35s ease-out;
+        z-index: 4;
+        .navbar {
+            padding: 10px 0;
+        }
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

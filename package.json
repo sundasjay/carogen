@@ -1,0 +1,35 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "NODE_ENV=development gulp build",
+    "build:production": "NODE_ENV=production gulp build",
+    "start": "NODE_ENV=development gulp watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.3",
+    "dotenv": "^16.3.1",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-if": "^3.0.0",
+    "gulp-image": "^6.3.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-uglify": "^3.0.2",
+    "postcss": "^8.4.27",
+    "postcss-cli": "^10.1.0",
+    "postcss-import": "^15.1.0",
+    "sass": "^1.64.2",
+    "tailwindcss": "^2.2.19"
+  },
+  "dependencies": {
+    "swiper": "^10.1.0"
+  }
+}
